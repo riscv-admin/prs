@@ -1,37 +1,28 @@
-# {{ New Group Name }} {{ New Group Type }} Charter
+# Platform Runtime Services 2022 Task Group Charter
 
-## Directions for creating a charter
-The information in this file should be created as part of the group formation and approved by your sponsoring group.  See the [Chairs Best Practices policy](https://docs.google.com/document/d/1rtXskVd7YyFq74tQ2OrInyM_-OQa228R5UZs5Pm3Vz0/) for more details.
+The primary objective of the Platform Runtime Services(PRS) 2022 TG is to drive the standardization for various platform services required for interaction between the supervisor software and the firmware. This includes Supervisor Binary Interface(SBI), Advanced Configuration and Power Interface(ACPI), Unified Extensible Firmware Interface (UEFI) specifications. While the SBI is a RISC-V only specification maintained by the RISC-V community, UEFI & ACPI are cross architecture specifications.
 
-A good Task Group (TG) charter describes how it achieves filling in a gap defined by the Special Interest Group (SIG) or Committee that spawned it (directly or dotted line). It lists the specific small set of  deliverables it will deliver.
+Any RISC-V related additions merged in the UEFI & ACPI specification will be maintained by the UEFI forum. Some of the changes may be maintained by the RISC-V community if it was not merged into the standard specifications. In that case, the standard specification will contain a hyperlink to actual content maintained by the RISC-V community.
 
-A SIG is an extension of a Committee, in that its only deliverables are strategy, gaps, and prioritizations, and helping spawn other SIGs or TGs to fill the gaps. A good SIG charter spells out the small set of topic areas their strategy will address along with its responsibilities as laid out in this bullet.
+The SBI specification v1.0[1] was ratified earlier in 2022 and is already in use on any platform capable of running a rich OS environment. Similarly, UEFI v2.9, released in March 2021, already supports RISC-V. Apart from that another RISC-V specific UEFI protocol (RISCV_EFI_BOOT_PROTOCOL) was ratified earlier in 2022. It is currently maintained by the RISC-V community[2]. The latest ACPI specification doesn&apos;t support RISC-V yet.
 
-In the next section is a raw template.  Delete the section header and substitute appropriate text in for [ALL CAPS ITEMS AS DESCRIBED].
+The TG will be responsible to maintain the current specifications and release future revisions in 2022. As these are non-ISA specifications it will continue to evolve along with the software ecosystem.
 
-**Delete this whole section when done.**
+The TG will establish a regular communication channel between various working groups such as, but not limited to, confidential computing, secure/measured boot, hypervisors, debug and unified discovery to identify the areas where possible new SBI extension / UEFI protocol / ACPI tables need to be added.
 
-## Raw template
+The PRS TG will be performing the following tasks:
 
-The {{ New Group Name }} {{ New Group Type }} will [OVERALL MISSION STATEMENT in 2-3 
-SENTENCES]
+ * Defines a clear process for any TG to propose a new SBI extension
+ * UEFI/ACPI specification revision will follow the open standard ECR process
+ * Provides an open collaborative platform to discuss the new specification proposals
+ * Responsible for Proof of Concent (PoC) completion of the new extensions
+ * Maintains Supervisor Binary Interface (SBI) v1.0 onwards and RISC-V specific parts in UEFI/ACPI specification
+ * Release the SBI specification as per the non-ISA policy laid out by RISC-V International
+ * Request to merge UEFI/ACPI changes as per the ECR process laid out by UEFI forum
+ * Coordination with other TGs depending on the SBI/UEFI/ACPI specification release to keep everything in sync.
+ * Ensures that the new SBI extensions do not introduce any incompatibility while following the calling convention laid out in SBI v1.0.
+ * Ensures UEFI/ACPI specification changes are acceptable in the open source community (i.e Linux kernel) as well
 
-[THIS PARAGRAPH IS OPTIONAL]
-The [TERM 1] IS [DEFINITION 1].  [EXPLANATION  OF IMPORTANCE OF TERM 1]. [MORE TERMS AND DEFINITIONS AS NEEDED]
+[1] https://github.com/riscv-non-isa/riscv-sbi-doc
 
-[BACKGROUND INFORMATION ABOUT RELEVANCE OF GROUP/TECHNOLOGY]
-
-The {{ New Group Name }} {{ New Group Type }} will [DELIVER SOMETHING] [WITH THESE ATTRIBUTES]:
-
- - [ATTRIBUTE 1]
- - [ATTRIBUTE 2]
- - [... AS NEEDED]
-
-[THIS PARAGRAPH AND LIST ARE OPTIONAL, ESPECIALLY IF THE LIST IS EMPTY]
-The following items are presently not planned to be delivered as part of this work, but may be considered in future versions:
-
- 1. [FEATURE 1]
- 1. [FEATURE 2]
- 1. [... AS NEEDED]
-
-To achieve its goals, the {{ New Group Name }} {{ New Group Type }}, will interact with the following groups: [GROUP NAME 1] [GROUP TYPE 1], [GROUP NAME 2] [GROUP TYPE 2], [...] and [GROUP NAME N] [GROUP TYPE N]. 
+[2] https://github.com/riscv-non-isa/riscv-uefi/blob/main/boot_protocol.adoc
