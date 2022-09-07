@@ -6,7 +6,8 @@ Any RISC-V related additions merged in the UEFI & ACPI specification will be mai
 
 The SBI specification v1.0[1] was ratified earlier in 2022 and is already in use on any platform capable of running a rich OS environment. Similarly, UEFI v2.9, released in March 2021, already supports RISC-V. Apart from that another RISC-V specific UEFI protocol (RISCV_EFI_BOOT_PROTOCOL) was ratified earlier in 2022. It is currently maintained by the RISC-V community[2]. The latest ACPI specification doesn&apos;t support RISC-V yet.
 
-The TG will be responsible to maintain the current specifications and release future revisions in 2022. As these are non-ISA specifications it will continue to evolve along with the software ecosystem.
+The TG will be responsible to maintain the current specifications and release future revisions in 2022. The next SBI specification release version will be 2.0 while the ACPI/UEFI version will depend on the policy set by UEFI forum. 
+As these are non-ISA specifications it will continue to evolve along with the software ecosystem.
 
 The TG will establish a regular communication channel between various working groups such as, but not limited to, confidential computing, secure/measured boot, hypervisors, debug and unified discovery to identify the areas where possible new SBI extension / UEFI protocol / ACPI tables need to be added.
 
