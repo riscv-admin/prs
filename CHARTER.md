@@ -13,7 +13,7 @@ The TG will establish a regular communication channel between various working gr
 
 The PRS TG will be performing the following tasks:
 
- * Defines a clear process for any TG to propose a new SBI extension
+ * Defines a clear process[3] for any TG to propose a new SBI extension
  * UEFI/ACPI specification revision will follow the open standard ECR process
  * Provides an open collaborative platform to discuss the new specification proposals
  * Responsible for Proof of Concent (PoC) completion of the new extensions
@@ -27,3 +27,5 @@ The PRS TG will be performing the following tasks:
 [1] https://github.com/riscv-non-isa/riscv-sbi-doc
 
 [2] https://github.com/riscv-non-isa/riscv-uefi/blob/main/boot_protocol.adoc
+
+[3] https://docs.google.com/document/d/1bQGHU-wD4uN4mU07oH9adpXbH51NqUbFxcL8qTTIqhA/edit#heading=h.n8bomqns4gqf
